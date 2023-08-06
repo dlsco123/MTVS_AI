@@ -1,0 +1,56 @@
+blinker==1.6.2
+Brotli @ file:///D:/bld/brotli-split_1687884251065/work
+cachetools==5.3.1
+certifi==2023.7.22
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1688813409104/work
+click==8.1.6
+clip @ git+https://github.com/openai/CLIP.git@a1d071733d7111c9c014f024669f959182114e33
+colorama==0.4.6
+fairscale==0.4.13
+filelock @ file:///home/conda/feedstock_root/build_artifacts/filelock_1686612785345/work
+Flask==2.3.2
+fsspec==2023.6.0
+ftfy==6.1.1
+google-api-core==2.11.1
+google-auth==2.22.0
+google-cloud-speech==2.21.0
+google-cloud-texttospeech==2.14.1
+googleapis-common-protos==1.60.0
+grpcio==1.56.2
+grpcio-status==1.56.2
+huggingface-hub==0.16.4
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
+itsdangerous==2.1.2
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1654302431367/work
+MarkupSafe @ file:///D:/bld/markupsafe_1685769192208/work
+mpmath @ file:///home/conda/feedstock_root/build_artifacts/mpmath_1678228039184/work
+networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1680692919326/work
+numpy @ file:///D:/bld/numpy_1691056618426/work
+packaging==23.1
+Pillow @ file:///D:/bld/pillow_1675487397478/work
+proto-plus==1.22.3
+protobuf==4.23.4
+pyasn1==0.5.0
+pyasn1-modules==0.3.0
+PySocks @ file:///D:/bld/pysocks_1661604991356/work
+pytesseract==0.3.10
+PyYAML==6.0.1
+regex==2023.6.3
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1684774241324/work
+rsa==4.9
+safetensors==0.3.1
+scipy==1.11.1
+six==1.16.0
+sympy @ file:///home/conda/feedstock_root/build_artifacts/sympy_1684180539862/work
+timm==0.9.5
+tokenizers==0.13.3
+torch==2.0.1
+torchaudio==2.0.2
+torchvision==0.15.2
+tqdm==4.65.0
+transformers==4.31.0
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1688315532570/work
+urllib3==1.26.16
+wcwidth==0.2.6
+Werkzeug==2.3.6
+win-inet-pton @ file:///D:/bld/win_inet_pton_1667051142467/work

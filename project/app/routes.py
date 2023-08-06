@@ -1,7 +1,14 @@
-from flask import request, jsonify, send_file
+from flask import request, jsonify, send_file, render_template
+from PIL import Image
+import pytesseract
+import io
 from app.models.resnet_model import classify_image
 from app.services.stt_service import stt
 from app.services.tts_service import tts
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/classify', methods=['POST'])
 def classify():
@@ -21,3 +28,15 @@ def stt_tts_route():
             mimetype='audio/mp3'
         )
     return "메타버스라는 말을 찾을 수 없습니다.", 400
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file provided'}), 400
+
+    file = request.files['file']
+    image = Image.open(file.stream)
+    
+    extracted_text = pytesseract.image_to_string(image, lang='kor')
+    
+    return jsonify({'text': extracted_text})
